@@ -1,0 +1,71 @@
+@import 'variables';
+
+.card-list {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    display: flex;
+    width: calc(100% / 3);
+    flex-direction: column;
+    justify-content: space-between;
+    img {
+      height: 400px;
+      width: 357.5px;
+      object-fit: cover;
+      border-radius: 10px;
+      opacity: 0.8;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    &:hover h3 {
+      color: $black;
+    }
+    h3 {
+      position: relative;
+      bottom: 75px;
+      left: 15px;
+      color: #fff;
+      font-size: 2rem;
+    }
+  }
+}
+
+main {
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+  img {
+    height: 400px;
+    width: 357.5px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+}
+
+#wrapper {
+  button {
+    display: block;
+  }
+}
+
+.card-front, .card-back {
+  height: 400px;
+  width: calc(100% / 2 - 40px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+.card-back {
+  border: 3px solid $black;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 15px;
+  h3 {
+    font-size: 3rem;
+    margin: 0;
+    text-align: center;
+  }
+}
