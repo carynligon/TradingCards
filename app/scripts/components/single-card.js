@@ -8,10 +8,11 @@ const Card = React.createClass({
     hashHistory.push(`/` + this.props.item.id);
   },
   render: function() {
+    console.log(this);
     return (
-      <li id={this.props.item.id} onClick={this.gotoCardPage}>
-        <img src={this.props.item.img}/>
-        <h3>{this.props.item.name}</h3>
+      <li id={this.get('_id')} onClick={this.gotoCardPage}>
+        <img src={this.get('img')}/>
+        <h3>{this.get('name')}</h3>
       </li>
     );
   }

@@ -4,6 +4,7 @@ import $ from 'jquery';
 
 import Cards from './collections/cardsCollection';
 import store from './store';
+import settings from './settings';
 import AppRouter from './router';
 
 $(document).ajaxSend(function(evt, xhrAjax, jqueryAjax) {
@@ -14,5 +15,11 @@ $(document).ajaxSend(function(evt, xhrAjax, jqueryAjax) {
     xhrAjax.setRequestHeader('Authorization', 'Basic ' + settings.basicAuth);
   }
 });
+
+// localStorage.authtoken = 1234;
+// store.cards.fetch({success:function(response) {
+//   console.log(response);
+// }});
+
 
 ReactDOM.render(AppRouter, document.getElementById('container'));
