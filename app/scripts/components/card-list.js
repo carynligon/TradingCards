@@ -5,17 +5,12 @@ import store from '../store';
 import Card from './single-card';
 
 const CardList = React.createClass({
+
   render: function() {
     document.getElementById('to-login').style.display = "inline";
-    let listArr = [];
-    store.cards.fetch({success: (response) => {
-      console.log(response);
-      listArr = response.map((card, i) => {
-        console.log(card.attributes);
-        return <Card item={card.attributes} key={i}/>;
-      });
-      console.log(listArr);
-    }});
+    let listArr = store.data.map((card, i) => {
+      return <Card item={card} key={i}/>;
+    });
     return (
       <ul className="card-list">
         {listArr}

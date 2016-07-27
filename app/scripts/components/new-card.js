@@ -17,7 +17,7 @@ const NewCard = React.createClass({
     }
     store.data.push(newObj);
     console.log(store.data);
-    hashHistory.push(`/`);
+    hashHistory.push('/');
   },
   render: function() {
     return (

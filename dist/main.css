@@ -9,6 +9,7 @@
     .card-list li img {
       height: 400px;
       width: 357.5px;
+      margin: 0 auto;
       object-fit: cover;
       border-radius: 10px;
       opacity: 0.8; }
@@ -19,7 +20,7 @@
     .card-list li h3 {
       position: relative;
       bottom: 75px;
-      left: 15px;
+      left: 150px;
       color: #fff;
       font-size: 2rem; }
 
@@ -53,5 +54,12 @@ main {
     font-size: 3rem;
     margin: 0;
     text-align: center; }
+
+@media screen and (max-width: 1200px) {
+  .card-list li {
+    width: calc(100% / 2); } }
+@media screen and (max-width: 800px) {
+  .card-list li {
+    width: calc(100% / 1); } }
 
 /*# sourceMappingURL=main.css.map */
