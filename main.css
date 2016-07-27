@@ -1,3 +1,34 @@
+body {
+  font-family: helvetica, sans-serif;
+  margin: 0; }
+
+nav {
+  background: #FF5A5F;
+  padding: 20px; }
+  nav a {
+    color: #fff;
+    text-decoration: none; }
+    nav a:hover {
+      color: #3C3C3C; }
+
+.login-form {
+  width: 300px;
+  margin: 170px auto;
+  text-align: center;
+  padding: 30px 5px;
+  background: #FF5A5F;
+  color: #fff; }
+  .login-form h4 {
+    font-size: 2rem;
+    margin: 0; }
+  .login-form input {
+    margin: 10px 5px;
+    background: #fff;
+    line-height: 1.3rem;
+    border: none; }
+    .login-form input:focus {
+      outline: none; }
+
 .card-list {
   display: flex;
   flex-wrap: wrap; }
@@ -35,25 +66,50 @@ main {
     border-radius: 10px; }
 
 #wrapper button {
-  display: block; }
+  display: block;
+  margin: 20px;
+  border: none;
+  padding: 5px 10px;
+  background: #FF5A5F;
+  color: #fff; }
+  #wrapper button:hover {
+    background: none;
+    color: #FF5A5F; }
+  #wrapper button:focus {
+    outline: none; }
 
 .card-front, .card-back {
   height: 400px;
   width: calc(100% / 2 - 40px);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin: 20px; }
 
 .card-back {
   border: 3px solid #3C3C3C;
+  color: #3C3C3C;
   border-radius: 10px;
   box-sizing: border-box;
   padding: 15px; }
   .card-back h3 {
     font-size: 3rem;
-    margin: 0;
+    margin: 0 0 15px 0;
     text-align: center; }
+  .card-back a {
+    text-decoration: none;
+    color: #087E8B; }
+    .card-back a:hover {
+      color: #FF5A5F; }
+  .card-back .quote {
+    font-size: 1.3rem;
+    font-style: italic;
+    text-align: center;
+    margin-top: 30px; }
+  .card-back .points {
+    position: absolute;
+    bottom: 110px;
+    color: #FF5A5F;
+    font-weight: bolder; }
 
 @media screen and (max-width: 1200px) {
   .card-list li {
