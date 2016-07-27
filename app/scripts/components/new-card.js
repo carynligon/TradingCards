@@ -15,8 +15,6 @@ const NewCard = React.createClass({
       quote: this.refs.quote.value,
       img: this.refs.img.value
     }
-    store.data.push(newObj);
-    console.log(store.data);
     hashHistory.push('/');
   },
   render: function() {

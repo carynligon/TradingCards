@@ -26,9 +26,10 @@ const Login = React.createClass({
   render: function() {
     document.getElementById('to-login').style.display = "none";
     return (
-      <form onSubmit={this.submitFunction}>
+      <form onSubmit={this.submitFunction} className="login-form">
+        <h4>Login</h4>
         <input type="text" placeholder="username" ref="username"/>
-        <input type="text" placeholder="password" ref="password"/>
+        <input type="password" placeholder="password" ref="password"/>
         <input type="submit" value="submit"/>
       </form>
     );

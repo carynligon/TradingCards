@@ -23,7 +23,7 @@ const CardPage = React.createClass({
             <a href={this.model.haters}>Not my biggest fans</a>
             <a href={this.model.twitter}>Twitter</a>
             <p className="sign">My Sign: {this.model.astrology}</p>
-            <p>{this.model.quote}</p>
+            <p className="quote">"{this.model.quote}"</p>
             <p className="points">{this.model.value}</p>
           </div>
         </main>
