@@ -8,4 +8,4 @@
  - Backbone
  - React
 
- View live [here](https://carynligon.github.io/trading-cards/)
+ View live [here](https://carynligon.github.io/TradingCards/)
